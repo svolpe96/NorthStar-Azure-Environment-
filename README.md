@@ -2,7 +2,7 @@
 
 This is the Azure side of my [NorthStar Enterprise Environment](https://github.com/svolpe96/NorthStar-Enterprise-Lab), a physical environment I built using Cisco networking, Proxmox, Windows Server, and Active Directory.
 
-I'm using Azure to expand on what I've already built and get hands-on experience with cloud networking, administration, identity, security, and eventually hybrid infrastructure. This is a simulated enterprise environment, not a production business.
+I'm using Azure to expand on what I've already built and get hands-on with with cloud networking, administration, identity, security, and eventually hybrid infrastructure.
 
 ## What I'm Building
 
@@ -24,7 +24,7 @@ The reason I chose to do both is to get experience with each design and the proc
 - Private connectivity between Azure and NorthStar on-premises
 - Azure-hosted domain controller and file services
 - Backup and restore testing
-- Azure Monitor, Splunk, and eventually Microsoft Sentinel
+- Azure Monitor and Microsoft Sentinel
 - Security controls, governance, and infrastructure as code
 
 ## Current Status
