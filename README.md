@@ -1,6 +1,6 @@
 # NorthStar Azure Enterprise Environment
 
-This is the Azure side of my [NorthStar Enterprise Environment](https://github.com/svolpe96/NorthStar-Enterprise-Lab), a physical environment I built using Cisco networking, Proxmox, Windows Server, and Active Directory.
+This is the Azure side of my [Physical Environment](https://github.com/svolpe96/NorthStar-Enterprise-Lab), a physical environment I built using Cisco networking, Proxmox, Windows Server, and Active Directory.
 
 I'm using Azure to expand on what I've already built and get hands-on with with cloud networking, administration, identity, security, and eventually hybrid infrastructure.
 
