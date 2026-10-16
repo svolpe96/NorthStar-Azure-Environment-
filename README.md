@@ -30,3 +30,7 @@ After testing the single-VNet design, I'll build a hub-and-spoke architecture to
 I'm aiming to keep the lab around **$30–$50 per month**, running VMs only when needed.
 
 See [01-Architecture / Initial Azure Design](01-Architecture/initial-design.md) for the addressing plan, resource organization, and current setup status. I'll add actual configurations, screenshots, testing, and troubleshooting as I build.
+
+## Project History
+
+I keep a [running project log](PROJECT-LOG.md) of what I worked on, issues I encountered, and decisions I made along the way.
