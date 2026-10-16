@@ -6,13 +6,9 @@ I'm using Azure to expand the lab and get hands-on experience with cloud network
 
 ## What I'm Building
 
-### 1. Single VNet
+**Single VNet:** I'm starting with one VNet and separate subnets for servers, management, applications, and security. I'll configure and test connectivity, NSGs, routing, and workloads as I build it.
 
-I'm starting with one VNet and separate subnets for servers, management, applications, and security. I'll configure and test connectivity, NSGs, routing, and workloads as I build it.
-
-### 2. Hub-and-Spoke
-
-After testing the single-VNet design, I'll build a hub-and-spoke architecture to learn peering, shared connectivity, and workload separation. I want to document both designs and the transition between them rather than skip straight to the final architecture.
+**Hub-and-Spoke:** After testing the single-VNet design, I'll build a hub-and-spoke architecture to learn peering, shared connectivity, and workload separation. I want to document both designs and the transition between them rather than skip straight to the final architecture.
 
 ## Planned Expansion
 
