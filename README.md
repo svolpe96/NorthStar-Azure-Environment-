@@ -1,36 +1,32 @@
 # NorthStar Azure Enterprise Environment
 
-This is the Azure side of my [Physical Environment](https://github.com/svolpe96/NorthStar-Enterprise-Lab), a physical environment I built using Cisco networking, Proxmox, Windows Server, and Active Directory.
+This is the Azure side of my [Physical Environment](https://github.com/svolpe96/NorthStar-Enterprise-Lab), where I've been working with Cisco networking, Proxmox, Windows Server, and Active Directory.
 
-I'm using Azure to expand on what I've already built and get hands-on with with cloud networking, administration, identity, security, and eventually hybrid infrastructure.
+I'm using Azure to expand the lab and get hands-on experience with cloud networking, administration, identity, security, and eventually hybrid infrastructure. This is a simulated enterprise environment, not a production business.
 
 ## What I'm Building
 
-I'm planning to build two Azure network designs and document both.
-
 ### 1. Single VNet
 
-I'll start with one VNet divided into subnets for different workloads. This will be a working environment where I can deploy VMs, configure NSGs and routing, manage access, and test connectivity and security.
+I'm starting with one VNet and separate subnets for servers, management, applications, and security. I'll configure and test connectivity, NSGs, routing, and workloads as I build it.
 
 ### 2. Hub-and-Spoke
 
-Once the single-VNet design is built and tested, I'll move to hub-and-spoke. I want to learn VNet peering, shared connectivity, and how to separate workloads across multiple VNets.
-
-The reason I chose to do both is to get experience with each design and the process of moving from one to the other. I'll keep the documentation and test results from the first build even after moving to the second. I'll plan workload migration carefully so I don't unnecessarily lose data or configurations.
+After testing the single-VNet design, I'll build a hub-and-spoke architecture to learn peering, shared connectivity, and workload separation. I want to document both designs and the transition between them rather than skip straight to the final architecture.
 
 ## Planned Expansion
 
 - Microsoft Entra ID and hybrid identity with my existing `north.local` domain
-- Private connectivity between Azure and NorthStar on-premises
+- Private connectivity to the physical NorthStar environment
 - Azure-hosted domain controller and file services
 - Backup and restore testing
-- Azure Monitor and Microsoft Sentinel
+- Azure Monitor, Microsoft Sentinel, and hands-on Splunk testing
 - Security controls, governance, and infrastructure as code
 
 ## Current Status
 
-**Planning:** No Azure resources have been confirmed as deployed yet. I'm starting with the network design, naming conventions, IP addressing, and cost controls.
+**Subscription created; infrastructure not yet deployed.** I've selected East US for the initial design and planned the VNet, subnets, resource groups, and naming conventions. The $50 monthly budget setup is pending while Azure Cost Management finishes loading.
 
-I'm targeting roughly **$30–$50 per month**, so I'll run VMs when needed and evaluate ongoing costs before deploying services.
+I'm aiming to keep the lab around **$30–$50 per month**, running VMs only when needed.
 
-As the project progresses, I'll add architecture diagrams, configurations, screenshots, validation, and troubleshooting notes in separate project folders instead of putting every technical detail in this README.
+See [01-Architecture / Initial Azure Design](01-Architecture/initial-design.md) for the addressing plan, resource organization, and current setup status. I'll add actual configurations, screenshots, testing, and troubleshooting as I build.
