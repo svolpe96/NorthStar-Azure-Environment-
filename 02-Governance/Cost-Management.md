@@ -4,25 +4,9 @@ I set up a subscription-level budget before deploying any Azure infrastructure s
 
 ## Budget configuration
 
-| Setting | Value |
-| --- | --- |
-| Subscription | `sub-northstar-prod-01` |
-| Budget name | `budget-northstar-monthly` |
-| Reset period | Monthly |
-| Budget amount | $50 USD |
-| Start date | October 1, 2026 |
-| Expiration date | October 1, 2028 |
-| Scope | Entire subscription (no additional filters) |
-| Notifications | Email |
-| Action groups | None |
+<img width="1711" height="909" alt="image" src="https://github.com/user-attachments/assets/1071cfcc-72bb-433f-ab1c-c376b5a3815e" />
 
-I configured three **actual-cost** alerts:
 
-| Threshold | Monthly spend |
-| --- | ---: |
-| 40% | $20 |
-| 70% | $35 |
-| 90% | $45 |
 
 The budget alerts me as spending increases, but it does **not** stop resources or cap charges at $50. My plan is to keep the lab around $30–$50 per month, shut down/deallocate VMs when I'm not using them, and watch for charges that continue while VMs are stopped, such as disks and other provisioned services.
 
@@ -32,8 +16,3 @@ I originally created the budget with an **annual** reset period by mistake. The 
 
 I verified the new budget on the Azure Budgets page on October 16, 2026. It showed **Monthly**, **$50.00**, and **$0.00 evaluated spend** at that point. The three alert thresholds were also visible on the budget details page.
 
-## Screenshot
-
-I captured the completed budget details page showing the monthly reset period and all three alerts. The screenshot has not been added to the repository yet.
-
-Suggested path once uploaded: `02-Governance/screenshots/azure-monthly-budget.png`.
