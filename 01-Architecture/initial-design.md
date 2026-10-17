@@ -43,7 +43,7 @@ Initial VNet: **`vnet-northstar-prod-eus-01` — `172.20.0.0/20`**
 
 I decided to include a Security subnet from the beginning, even if it stays empty initially. Microsoft Sentinel doesn't need a subnet, but I may deploy Splunk temporarily to practice log ingestion, SPL, and security monitoring. Keeping a separate subnet also gives me another segment to secure and test with NSGs.
 
-I deployed the VNet and all four subnets. I removed the default subnet, enabled the private subnet option (no default outbound access), and left NAT gateways, NSGs, and route tables unassigned for now. NSG rules and routing still need to be configured and tested.
+I deployed the VNet and all four subnets. I removed the default subnet, enabled the private subnet option (no default outbound access), and left NAT gateways, NSGs, and route tables unassigned for now. NSG rules and routing still need to be configured and tested. The deployment details are in [Virtual Network](../03-Networking/Virtual-Network.md).
 
 ## Version 2: Hub-and-spoke (future design)
 
