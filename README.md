@@ -25,7 +25,7 @@ After testing the single-VNet design, I'll build a hub-and-spoke architecture to
 
 ## Current Status
 
-**Subscription created; infrastructure not yet deployed.** I've selected East US for the initial design and planned the VNet, subnets, resource groups, and naming conventions. The $50 monthly budget setup is pending while Azure Cost Management finishes loading.
+**Subscription created; infrastructure not yet deployed.** I've selected East US for the initial design and planned the VNet, subnets, resource groups, and naming conventions. I configured a $50 monthly subscription budget with actual-cost email alerts at $20, $35, and $45.
 
 I'm aiming to keep the lab around **$30–$50 per month**, running VMs only when needed.
 
