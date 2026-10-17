@@ -2,6 +2,16 @@
 
 This is my running log of what I worked on, decisions I made, and issues I ran into. Detailed documentation lives in the project folders.
 
+## October 17, 2026
+
+### Created the networking resource group and VNet
+
+I created `rg-network-prod-eus-01` in East US and used four tags: Project (NorthStar), Environment (Prod-Lab), Owner (Steven), and Purpose (Networking). I originally considered a ManagedBy tag but decided it wasn't useful for this stage of the lab.
+
+I deployed `vnet-northstar-prod-eus-01` with the `172.20.0.0/20` address space. I removed Azure's default subnet and created `snet-servers` (`172.20.1.0/24`), `snet-management` (`172.20.2.0/24`), `snet-applications` (`172.20.3.0/24`), and `snet-security` (`172.20.4.0/24`). I enabled the private subnet setting and left NAT gateways, NSGs, and route tables unassigned for now. I also left the optional paid VNet security services disabled to stay within my budget.
+
+Next I'll configure NSGs and test connectivity when there are workloads to test.
+
 ## October 16, 2026
 
 ### Corrected the Azure budget
