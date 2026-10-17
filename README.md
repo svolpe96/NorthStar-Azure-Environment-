@@ -25,7 +25,7 @@ After testing the single-VNet design, I'll build a hub-and-spoke architecture to
 
 ## Current Status
 
-**Subscription created; infrastructure not yet deployed.** I've selected East US for the initial design and planned the VNet, subnets, resource groups, and naming conventions. I configured a $50 monthly subscription budget with actual-cost email alerts at $20, $35, and $45.
+**The first VNet is deployed.** I created `rg-network-prod-eus-01` in East US and deployed `vnet-northstar-prod-eus-01` (`172.20.0.0/20`) with four subnets for servers, management, applications, and security. NSGs and workloads are next. I configured a $50 monthly subscription budget with actual-cost email alerts at $20, $35, and $45.
 
 I'm aiming to keep the lab around **$30–$50 per month**, running VMs only when needed.
 
