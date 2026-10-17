@@ -19,8 +19,7 @@ I also left Azure Bastion, Azure Firewall, and the other optional VNet security 
 
 ## Screenshot
 
-I captured the VNet address space page showing all four subnets during setup. I'll add that screenshot here once it's uploaded to GitHub.
+<img width="770" height="456" alt="subnets" src="https://github.com/user-attachments/assets/6a9c48b2-b5a3-47da-baae-c5613ee583e4" />
 
-## Next
 
-Configure NSGs and test traffic between subnets once I have workloads available. The VNet and subnets are deployed; the security rules and connectivity tests aren't done yet.
+
