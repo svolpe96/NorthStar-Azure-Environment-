@@ -13,7 +13,7 @@ I removed the default subnet Azure created and added four `/24` subnets:
 - `snet-applications` — `172.20.3.0/24`: application and web workloads.
 - `snet-security` — `172.20.4.0/24`: security tools and network isolation testing.
 
-I enabled the private subnet setting, which means the subnets don't get default outbound internet access. I left NAT gateways, network security groups, and route tables unassigned while creating the VNet. I'll configure and test NSGs separately as the next part of the project.
+I enabled the private subnet setting, which means the subnets don't get default outbound internet access. I left NAT gateways, network security groups, and route tables unassigned while creating the VNet.
 
 I also left Azure Bastion, Azure Firewall, and the other optional VNet security features disabled for now because I want to keep this lab within my $50 monthly budget.
 
